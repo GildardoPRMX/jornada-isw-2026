@@ -1,0 +1,105 @@
+/* --- Diseño general --- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 16px;
+}
+
+/* Contenedor para centrar el contenido */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --- HEADER (Diseño Profesional) --- */
+header {
+    background-image: linear-gradient(#1e2838 30%, #3c5171 90%);
+    background-size: 100%;
+    max-height: 600px;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Estilo del Menú */
+header .menu {
+    margin: 40px;
+    text-align: center;
+}
+
+header .menu a {
+    background: lightseagreen;
+    margin: 0 20px;
+    color: #fff;
+    padding: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+
+header .menu a:hover {
+    border-bottom: 2px solid lightseagreen; /* Cambia el color del subrayado */
+    background-color: rgba(255, 255, 255, 0.1); /* Agrega un brillo al fondo */
+}
+
+/* Alineación con Flexbox para centrar la caja de texto */
+header .container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 150px;
+}
+
+/* Caja de presentación con borde y fondo oscuro */
+header .container-text .text {
+    background-color: #101c33;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+/* Estilos para el Nombre y la Profesión */
+header .container-text .text h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+
+header .container-text .text p {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* --- BOTÓN DE DESCARGA CON EFECTOS --- */
+header .container-text .text button {
+    background-color: #a93226;
+    color: white;
+    padding: 12px 25px;
+    border: 0 solid;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+header .container-text .text button:hover {
+    background-color: #c0392b;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05); /* Efecto extra para tu ejercicio individual */
+}
+

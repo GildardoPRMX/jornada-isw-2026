@@ -1,169 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio - Jornada ISW 2026</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio - Gildardo Aarat</title>
+     
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/fontawesome-free-6.7.2-web/css/all.min.css">
+    
+    <script src="js/modernizr-custom.js"></script>
 </head>
 <body>
-    <header>
-        <img src="img/ues-logo.png" alt="Logo de la Universidad Estatal de Sonora">
-        <h1>Jornada de Ingeniero en Software 2026</h1>
-        <time datetime="2026-04-27">Lunes 27 de abril de 2026</time>
+
+    <header id="inicio">
+        <div class="container">
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#section-about">Acerca de</a>
+                <a href="#section-jobs">Trabajos</a>
+                <a href="#section-skills">Habilidades</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="container-text">
+                <div class="text">
+                    <h1>Gildardo Aarat</h1> 
+                    <p>Estudiante de Ingeniería en Software</p>
+                    <button type="button">DESCARGAR CV <i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+            
+            <br>
+            <img src="img/P.png" alt="Gildardo Aarat" width="200" height="200">
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="programa.html">Programa</a></li>
-            <li><a href="index.html#registro">Registro</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Agenda Rápida</h2>
-            <ul>
-                <li>11:00 - Conferencia 1</li>
-                <li>12:00 - Conferencia 2</li>
-                <li>13:00 - Entrega de reconocimientos</li>
-                <li>13:30 - Conferencia 3</li>
-                <li>14:30 - Evento cultural</li>
-            </ul>
+    <main id="main">
+        <section id="section-about">
+            <div class="container">
+                <h3>Acerca de</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+            </div>
         </section>
 
-        <section id="registro">
-            <h2>Registro Oficial</h2>
-            <form action="#" method="GET">
-                <div>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+        <section id="section-jobs">
+            <div class="container">
+                <h3>Trabajos</h3>
+                <div class="container-jobs">
+                    <div class="job">
+                        <img src="img/BACKGRUIND.png" width="250" height="250" alt="Trabajo 1">
+                        <p><strong>Lorem Ipsum</strong></p>
+                        <p>HTML - CSS - PHP</p>
+                    </div>
+                    <br>
+                    <div class="job">
+                        <img src="img/BACKGRUIND.png" width="250" height="250" alt="Trabajo 2">
+                        <p><strong>Lorem Ipsum</strong></p>
+                        <p>HTML - CSS - PHP</p>
+                    </div>
+                    <br>
+                    <div class="job">
+                        <img src="img/BACKGRUIND.png" width="250" height="250" alt="Trabajo 3">
+                        <p><strong>Lorem Ipsum</strong></p>
+                        <p>HTML - CSS - PHP</p>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="section-skills">
+            <div class="container">
+                <h3>Habilidades</h3>
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i> <p>HTML</p>
+                    <p>Experto</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-contact">
+            <div class="container">
+                <h3 class="title">Contacto</h3>
                 
-                <div>
-                    <label for="correo">Correo institucional UES:</label>
-                    <input type="email" id="correo" name="correo" pattern="([0-9]{8}|[0-9]{11})@ues\.mx" required>
-                </div>
+                <form class="form-menssage" action="">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Correo" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input class="btn-send-msg" type="submit" value="Enviar">
+                </form>
 
-                <div>
-                    <label for="asistencia">Tipo de asistencia ISW:</label>
-                    <select id="asistencia" name="asistencia" required>
-                        <option value="">Selecciona...</option>
-                        <option value="alumno">Alumno (Ing. en Software)</option>
-                        <option value="docente">Docente (Ing. en Software)</option>
-                    </select>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
-
-                <div>
-                    <p>Evento principal de interés:</p>
-                    <input type="radio" id="evento_conf" name="evento_principal" value="conferencias" required>
-                    <label for="evento_conf">Conferencias</label>
-                    
-                    <input type="radio" id="evento_cult" name="evento_principal" value="cultural">
-                    <label for="evento_cult">Evento Cultural</label>
-                </div>
-
-                <div>
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea id="comentarios" name="comentarios"></textarea>
-                </div>
-
-                <button type="submit">Enviar Registro</button>
-            </form>
-        </section>
-        
-        <section>
-            <h2>Desarrollador</h2>
-            <img src="img/foto-propia.jpg" alt="Foto del desarrollador de la página">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Universidad Estatal de Sonora - Ingeniería en Software</p>
+        <div class="container">
+            <hr>
+            <p>Contenido del pie de página</p>
+        </div>
     </footer>
-</body>
-</html><!doctype html>
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio - Jornada ISW 2026</title>
-</head>
-<body>
-    <header>
-        <img src="img/ues-logo.png" alt="Logo de la Universidad Estatal de Sonora">
-        <h1>Jornada de Ingeniero en Software 2026</h1>
-        <time datetime="2026-04-27">Lunes 27 de abril de 2026</time>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="programa.html">Programa</a></li>
-            <li><a href="index.html#registro">Registro</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Agenda Rápida</h2>
-            <ul>
-                <li>11:00 - Conferencia 1</li>
-                <li>12:00 - Conferencia 2</li>
-                <li>13:00 - Entrega de reconocimientos</li>
-                <li>13:30 - Conferencia 3</li>
-                <li>14:30 - Evento cultural</li>
-            </ul>
-        </section>
-
-        <section id="registro">
-            <h2>Registro Oficial</h2>
-            <form action="#" method="GET">
-                <div>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                
-                <div>
-                    <label for="correo">Correo institucional UES:</label>
-                    <input type="email" id="correo" name="correo" pattern="([0-9]{8}|[0-9]{11})@ues\.mx" required>
-                </div>
-
-                <div>
-                    <label for="asistencia">Tipo de asistencia ISW:</label>
-                    <select id="asistencia" name="asistencia" required>
-                        <option value="">Selecciona...</option>
-                        <option value="alumno">Alumno (Ing. en Software)</option>
-                        <option value="docente">Docente (Ing. en Software)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <p>Evento principal de interés:</p>
-                    <input type="radio" id="evento_conf" name="evento_principal" value="conferencias" required>
-                    <label for="evento_conf">Conferencias</label>
-                    
-                    <input type="radio" id="evento_cult" name="evento_principal" value="cultural">
-                    <label for="evento_cult">Evento Cultural</label>
-                </div>
-
-                <div>
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea id="comentarios" name="comentarios"></textarea>
-                </div>
-
-                <button type="submit">Enviar Registro</button>
-            </form>
-        </section>
-        
-        <section>
-            <h2>Desarrollador</h2>
-            <img src="img/foto-propia.jpg" alt="Foto del desarrollador de la página">
-        </section>
-    </main>
-
-    <footer>
-        <p>Universidad Estatal de Sonora - Ingeniería en Software</p>
-    </footer>
 </body>
 </html>
